@@ -7,3 +7,4 @@ The European Commission, in close collaboration with the EU member states, will 
 The official landing page of the european wide hackathon EUvsVirus.
 
 Accessible under: https://euvsvirus.org/
+
