@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Now is your chance to help tackle coronavirus! #EUvsVirus">
+
+    <!-- Meta tags for social media -->
+    <meta property="og:title" content="Pan-European Hackathon">
+    <meta property="og:description" content="Now is your chance to help tackle coronavirus! #EUvsVirus">
+    <meta property="og:image" content="https://euvsvirus.org/assets/img/banner/Pan-EUHackathon-Thumbnail.jpg">
+    <meta property="og:url" content="https://euvsvirus.org">
+    <meta property="og:type" content="website">
+
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pan-European Hackathon">
+    <meta name="twitter:description" content="Now is your chance to help tackle coronavirus! #EUvsVirus">
+    <meta name="twitter:image" content="https://euvsvirus.org/assets/img/banner/Pan-EUHackathon-Thumbnail.jpg">
+
+
+    <title>Pan-European Hackathon</title>
+
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./../styles/styles-022.css">
+</head>
+
+<body>
+
+    <div class="share-container">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://euvsvirus.org/" target="_blank" rel="noreferrer">
+            <div class="share-btn">
+                <p>
+                    Share
+                </p>
+                <img alt="The Facebook F" src="./../assets/img/icons/fb-icon.png">
+            </div>
+        </a>
+    </div>
+
+    <!-- BEGIN mobile menu -->
+    <div id="mobileNav" class="overlay">
+        <section id="navbar-mobile">
+            <div class="navbar container">
+                <a href="./../"><img alt="EU versus virus hashtag" src="./../assets/img/navbar/EUvsVirus.svg"></a>
+                <div>
+                    <span class="toggle-mobile-menu-icon close" onclick="closeNav()">&times;</span>
+                </div>
+            </div>
+        </section>
+        <div class="overlay-content container">
+            <div>
+                <a href="./../" class="mobile-link-item menu-hackathon">Hackathon</a>
+                <a href="./../results/" class="mobile-link-item menu-item menu-results">Results</a>
+                <a href="./../challenges/" class="mobile-link-item menu-item menu-challenges">Challenges</a>
+                <a href="./../nextsteps/" class="mobile-link-item menu-item menu-nextsteps">What's Next</a>
+                <a href="./../faq/" class="mobile-link-item menu-item menu-faq">FAQ</a>
+
+                <!-- About -->
+                <ul class="mobile-menu-sub">
+                    <li>
+                        <a href="./../ambassadors/" class="mobile-link-item menu-item menu-ambassadors">Ambassadors</a>
+                    </li>
+                    <li>
+                        <a href="./../partners/" class="mobile-link-item menu-item menu-partners">Partners</a>
+                    </li>
+                    <li>
+                        <a href="./../team/" class="mobile-link-item menu-item menu-team">Team</a>
+                    </li>
+                </ul>
+
+                <a class="mobile-link-item menu-item menu-press" onclick="closeNav()">Press</a>
+            </div>
+            <div class="d-flex mb-4">
+                <a href="https://twitter.com/EUvsVirus" target="_blank" rel="noreferrer">
+                    <img class="navbar-logo-mobile" alt="Logo Twitter" src="./../assets/img/navbar/twitter.png">
+                </a>
+                <a href="https://www.facebook.com/EuropeanCommission/" target="_blank" rel="noreferrer">
+                    <img class="navbar-logo-mobile" alt="Logo Facebook" src="./../assets/img/navbar/facebook.png">
+                </a>
+                <a href="https://www.instagram.com/EUvsVirus/" target="_blank" rel="noreferrer">
+                    <img class="navbar-logo-mobile" alt="Logo Instagram" src="./../assets/img/navbar/instagram.png">
+                </a>
+                <a href="https://www.linkedin.com/company/european-commission/" target="_blank" rel="noreferrer">
+                    <img class="navbar-logo-mobile" alt="Logo LinkedIn" src="./../assets/img/navbar/linkedin.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- END mobile menu -->
+
+
+    <!-- BEGIN navbar desktop -->
+    <section id="navbar-desktop">
+        <div class="navbar container">
+            <a href="./../"><img alt="EU versus virus hashtag" src="./../assets/img/navbar/EUvsVirus.svg"></a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://euvsvirus.org/" target="_blank"
+                rel="noreferrer">
+                <div class="share-btn mobile">
+                    <p>
+                        Share
+                    </p>
+                    <img alt="The Facebook F" src="./../assets/img/icons/fb-icon.png">
+                </div>
+            </a>
+            <div id="menu-mobile-burger">
+                <span class="toggle-mobile-menu-icon open" onclick="openNav()">&#9776;</span>
+            </div>
+            <nav id="menu-desktop-content">
+                <div class="d-flex">
+                    <ul>
+                        <li>
+                            <a href="./../"
+                                class="desktop-link-item menu-item menu-hackathon current-menu">Hackathon</a>
+                        </li>
+                        <li>
+                            <a href="./../results/" class="desktop-link-item menu-results menu-item">Results</a>
+                        </li>
+                        <li>
+                            <a href="./../challenges/"
+                                class="desktop-link-item menu-challenges menu-item">Challenges</a>
+                        </li>
+                        <li>
+                            <a href="./../nextsteps/" class="desktop-link-item menu-nextsteps menu-item">What's Next</a>
+                        </li>
+                        <li>
+                            <a href="./../faq/" class="desktop-link-item menu-item menu-faq">FAQ</a>
+                        </li>
+
+                        <li class="dd">
+                            <a id="about-menu-opener" style="cursor:pointer;" onclick="">About</a>
+                            <!-- First Tier Drop Down -->
+                            <ul>
+                                <li><a class="dd-item menu-ambassadors" href="./../ambassadors/">Ambassadors</a></li>
+                                <li><a class="dd-item menu-partners" href="./../partners/">Partners</a></li>
+                                <li><a class="dd-item menu-team" href="./../team/">Team</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="desktop-link-item menu-item menu-press">Press</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-btn-spacing"></div>
+                <div class="d-flex align-items-center ">
+                    <a class="" href="./../results/">
+                        <div class="primary-button btn-rounded">
+                            See results
+                        </div>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- END navbar desktop -->
+
+    <!-- BEGIN press -->
+    <section id="press" class="press">
+        <div class="container main-wrapper">
+            <h1>Press</h1>
+            <div class="h1-seperator"></div>
+
+            <h2>Graphics</h2>
+            <a href="https://drive.google.com/file/d/1--oXzEJ2X9jUH-GSmAlkcHcAZgNvD_X_/view" target="_blank"
+                rel="noreferrer">
+                <h3 class="d-inline-block"><u>EUvsVirus Flyer</u></h3>
+            </a>
+            <br>
+            <a href="https://drive.google.com/file/d/1OjJYncuS3SRLuPDNR9TAokdGSj-Qozhi/view" target="_blank"
+                rel="noreferrer">
+                <h3 class="d-inline-block"><u>EUvsVirus Banner</u></h3>
+            </a>
+            <br>
+            <a href="./../assets/img/press/Engagement Poster 1 - TWITTER.png" target="_blank" rel="noreferrer">
+                <h3 class="d-inline-block"><u>Engagement Poster 1 - Twitter</u></h3>
+            </a>
+            <br>
+            <a href="./../assets/img/press/Engagement Poster 2 - TWITTER.png" target="_blank" rel="noreferrer">
+                <h3 class="d-inline-block"><u>Engagement Poster 2 - Twitter</u></h3>
+            </a>
+
+            <h2>Press Releases</h2>
+            <a href="https://ec.europa.eu/info/news/european-commission-hosted-euvsvirus-hackathon-gives-rise-over-2000-pioneering-solutions-fight-outbreak-2020-apr-27_en"
+                target="_blank" rel="noreferrer" class="d-inline">
+                <h3 class="d-inline-block"><u>https://ec.europa.eu/info/news/european-commission-hosted-euvsv...</u>
+                </h3>
+            </a>
+            <br><small style="color: grey">27 April 2020</small><br>
+
+            <a href="https://ec.europa.eu/commission/presscorner/detail/en/mex_20_728" target="_blank" rel="noreferrer"
+                class="d-inline">
+                <h3 class="d-inline-block"><u>https://ec.europa.eu/commission/presscorner/detail/en/mex_20_72...</u>
+                </h3>
+            </a>
+            <br><small style="color: grey">23 April 2020</small><br>
+
+            <a href="https://ec.europa.eu/info/news/pan-european-hackathon-develop-innovative-solutions-overcome-societal-challenges-related-coronavirus-2020-apr-14_en"
+                target="_blank" rel="noreferrer" class="d-inline">
+                <h3 class="d-inline-block">
+                    <u>https://ec.europa.eu/info/news/pan-european-hackathon-develop-i...</u>
+                </h3>
+            </a>
+            <br><small style="color: grey">14 April 2020</small><br>
+
+            <a href="https://ec.europa.eu/info/news/euvsvirus-hackathon-develop-innovative-solutions-and-overcome-coronavirus-related-challenges-2020-apr-03_de"
+                target="_blank" rel="noreferrer" class="d-inline">
+                <h3 class="d-inline-block"><u>https://ec.europa.eu/info/news/euvsvirus-hackathon-develop-innov...</u>
+                </h3>
+            </a>
+            <br><small style="color: grey">3 April 2020</small><br>
+
+            <a href="https://ec.europa.eu/info/files/first-eravscorona-action-plan-short-term-coordinated-reseach-and-innovation-actions_en"
+                target="_blank" rel="noreferrer" class="d-inline">
+                <h3 class="d-inline-block">
+                    <u>https://ec.europa.eu/info/files/first-eravscorona-action-plan-short-t...</u>
+                </h3>
+            </a>
+            <br><small style="color: grey">April 2020</small><br>
+
+
+            <h2>Press Inquiries</h2>
+            <h3 style="font-weight: normal;">
+                <b>Press inquiries only!</b> -
+                Please send and email inquiry to:
+                <a
+                    href="mailto:RTD-PAN-EUROPEAN-COVID-HACKATHON@ec.europa.eu?subject=Press%20Inquiry%20From%20EUvsVirus%20Website">
+                    <h3 class="d-inline-block">
+                        <u>
+                            Press contact
+                        </u>
+                    </h3>
+                </a>
+            </h3>
+
+            <h2>Twitterwall – #EUvsVirus</h2>
+            <div class="mt-4">
+                <iframe id="twitter-wall" src="https://walls.io/EUvsVirus?nobackground=1" title="EUvsVirus"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- BEGIN footer -->
+    <footer class="mt-3 pt-1">
+        <div class="container d-flex space-between">
+            <div class="footer-left d-flex">
+                <img class="footer-hashtag" alt="EU versus virus hashtag"
+                    src="../assets/img/footer/EUvsVirus-footer.svg">
+                <ul>
+                    <li>
+                        <a href="./../terms/" hreflang="en">
+                            Terms &amp; Conditions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./../privacy/" hreflang="en">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./../imprint/" hreflang="en">
+                            Imprint
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./../assets/docs/EuvsVirus Values and Code Of Conduct.pdf" hreflang="en"
+                            target="_blank">
+                            Code of Conduct
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:RTD-PAN-EUROPEAN-COVID-HACKATHON@ec.europa.eu" hreflang="en">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center d-none-mobile">
+                <div class="d-flex align-items-center">
+
+                    <a href="https://twitter.com/EUvsVirus" target="_blank" rel="noreferrer">
+                        <img class="navbar-logo" alt="Logo Twitter" src="../assets/img/navbar/twitter.png">
+                    </a>
+                    <a href="https://www.facebook.com/EUvsVirus/" target="_blank" rel="noreferrer">
+                        <img class="navbar-logo" alt="Logo Facebook" src="../assets/img/navbar/facebook.png">
+                    </a>
+                    <a href="https://www.instagram.com/EUvsVirus/" target="_blank" rel="noreferrer">
+                        <img class="navbar-logo" alt="Logo Instagram" src="./../assets/img/navbar/instagram.png">
+                    </a>
+                    <a href="https://www.linkedin.com/company/euvsvirus/" target="_blank" rel="noreferrer">
+                        <img class="navbar-logo" alt="Logo LinkedIn" src="../assets/img/navbar/linkedin.png">
+                    </a>
+                    <div style="width: 20px;"></div>
+                    <a href="https://www.facebook.com/events/249707376073847" target="_blank" rel="noreferrer">
+                        <img class="navbar-logo" alt="Logo LinkedIn" src="../assets/img/footer/fbevent.png">
+                    </a>
+                </div>
+            </div>
+    </footer>
+    <!-- END footer -->
+
+    <script src="./../assets/js/global-023.js"></script>
+    <script src="./../assets/js/cookieconsent-017.min.js"></script>
+</body>
+
+</html>
