@@ -535,7 +535,7 @@ nav ul ul ul li {
 .header .container {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: -100px;
+	margin-bottom: 20px;
 }
 @media (max-width: 1200px) {
 	.header .container {
