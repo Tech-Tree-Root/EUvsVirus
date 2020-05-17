@@ -1415,6 +1415,55 @@ nav ul ul ul li {
 
 
 
+/*** BEGIN mfaqs ***/
+.mfaqs {
+	background-color: #F4F4F4;
+	background-color: var(--color-light-grey);
+	padding-bottom: 100px;	
+}
+
+.mfaqs h2 {
+	margin-top: 3rem;
+}
+
+.mfaqs h3 {
+	margin-top: 2rem;
+}
+
+.mfaqs hr {
+	margin-top: 10px;
+	background-color: #222121;
+	background-color: var(--color-grey-h3-normal);
+}
+
+.mfaqs p {
+	width: 80%;
+	margin-top: 1rem;
+	color: #222121;
+	color: var(--color-grey-h3-normal);
+}
+
+.mfaqs a {
+	color: #003399;
+	color: var(--color-primary-blue);
+}
+
+@media (max-width: 992px){
+	.mfaqs .p {
+		width: 100%;
+	}
+}
+
+.mfaqs-navigation a {
+	color: #003399;
+	color: var(--color-primary-blue);
+	text-decoration: underline;
+	display: block;
+}
+/*** END faq ***/
+
+
+
 /*** BEGIN press ***/
 .press {
 	background-color: #F4F4F4;
