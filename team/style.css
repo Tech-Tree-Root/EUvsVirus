@@ -1,0 +1,32 @@
+#whole_team_warpper {
+    /* display: flex; */
+}
+
+.team_wrapper {
+    /* background: white; */
+    border-top: black 2px solid;
+    padding: 5px;
+    margin-top:30px;
+}
+
+
+
+
+
+
+/* <div 
+        class="LI-profile-badge"  
+        data-version="v1" 
+        data-size="medium" 
+        data-locale="en_US" 
+        data-type="vertical" 
+        data-theme="light" 
+        data-vanity="kainyryu"
+    >
+        <a 
+            class="LI-simple-link" 
+            href='https://uk.linkedin.com/in/kainyryu?trk=profile-badge'
+        >
+                Kainy Ryu
+        </a>
+    </div> */
