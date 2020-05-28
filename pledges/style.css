@@ -1,6 +1,6 @@
-.pledge_wrapper {
+#pledge_wrapper {
     background: white;
-    border: black solid 1px;
+    /* border: black solid 1px; */
     padding: 5%;
     margin: 3vw 5vw;
 }
