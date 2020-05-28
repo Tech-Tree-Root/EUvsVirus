@@ -1,6 +1,10 @@
 #pledge_wrapper {
     background: white;
     /* border: black solid 1px; */
-    padding: 5%;
-    margin: 3vw 5vw;
+    margin: 20px 0;
+    padding: 20px;
+	-webkit-box-shadow: 0px 0px 12px 0px rgba(209,209,209,.8);
+	-moz-box-shadow: 0px 0px 12px 0px rgba(209,209,209,.8);
+	box-shadow: 0px 0px 12px 0px rgba(209,209,209,.8);
+	border-radius: 4px;
 }

@@ -1,7 +1,7 @@
 let pledge = [
     { project: 'Skyrocket Your Team', partners:[{name: 'Cordial AB', detail:'40-hour consultancy package (business model & strategy)'}, {name: 'Pernica d.o.o.', detail:'Free proposal writing for an EU/Estonian grant'}]},
     { project: 'Dynamic - DYNAMIC row for Coronavirus emergency', partners:[{name: 'Google', detail:'1000/2000 euros credit for the cloud service'}]},
-    { project: 'Ciclogreen', partners:[{name: 'Telefónica', detail:'"- 4 months of office space in one of our hubs in Madrid or Bacelona (Spain, that’s why it’s better if it is a Spanish project)<br /> - Acceleration services (group and individual mentorships, and acceleration services like we do in our Open Future program) <br /> - Possibility of a pitch to the investments committee and the possibility of an investment up to 250k€"'}]},
+    { project: 'Ciclogreen', partners:[{name: 'Telefónica', detail:'<br/> - 4 months of office space in one of our hubs in Madrid or Bacelona (Spain, that’s why it’s better if it is a Spanish project)<br /> - Acceleration services (group and individual mentorships, and acceleration services like we do in our Open Future program) <br /> - Possibility of a pitch to the investments committee and the possibility of an investment up to 250k€"'}]},
     { project: 'Platex - Reusable Face Masks', partners:[{name: 'stekiradio', detail:'1 year advertisment at stekiradio '}]},
     { project: 'sostenibl.es', partners:[{name: '', detail:''}]},
     { project: 'TBA', partners:[{name: 'WeWork Labs', detail:'"Pilot" program using Dynamic Row Srl App for Wework offices. The discussion will continue on monday'}]},
@@ -41,5 +41,3 @@ function project(teams) {
     document.getElementById('pledges').innerHTML = pledgeWrapper;
 }
 project(pledge);
-
-console.log(pledge.map(team => `${team.project}<br /> ${team.partners.map(partner => `${partner.name}`)}`))
