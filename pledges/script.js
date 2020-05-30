@@ -40,4 +40,54 @@ function project(teams) {
         .join('')
     document.getElementById('pledges').innerHTML = pledgeWrapper;
 }
+
+function compareProject(a, b) {
+    // Use toUpperCase() to ignore character casing
+    const projectA = a.project.toUpperCase();
+    const projectB = b.project.toUpperCase();
+    let comparison = 0;
+    if (projectA > projectB) {
+      comparison = 1;
+    } else if (projectA < projectB) {
+      comparison = -1;
+    }
+    return comparison;
+  }
+  
+  function comparePartner(a, b) {
+    // Use toUpperCase() to ignore character casing
+    const partnerA = a.partners[0].name.toUpperCase();
+    const partnerB = b.partners[0].name.toUpperCase();
+    let comparison = 0;
+    if (partnerA > partnerB) {
+      comparison = 1;
+    } else if (partnerA < partnerB) {
+      comparison = -1;
+    }
+    return comparison;
+  }
+
+
+function sortByProject() {
+    const sortedProjects = pledge.sort(compareProject);
+    project(sortedProjects);
+}
+
+function sortByPartner() {
+    const sortedPartners = pledge.sort(comparePartner);
+    project(sortedPartners);
+}
+
+
+var projectSortButton = document.querySelector('#project');
+var partnerSortButton = document.querySelector('#partner');
+
+projectSortButton.addEventListener('click', event => {
+    sortByProject();
+})
+
+partnerSortButton.addEventListener('click', event => {
+    sortByPartner();
+})
+
 project(pledge);
