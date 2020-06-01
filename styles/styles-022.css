@@ -200,6 +200,11 @@ button:focus {
 	width: 160px;
 	margin-right: 16px;
 }
+.primary-button.btn-angular-small2 {
+	padding: 10px 25px;
+	width: 400px;
+	margin-right: 16px;
+}
 .primary-button.btn-rounded {
 	padding: 6px 6px;
 	border-radius: 30px;
