@@ -123,7 +123,7 @@ let partnerList = [
     },
     {
         name: "Telefónica", 
-        detail: '<br/> - 4 months of office space in one of our hubs in Madrid or Bacelona (Spain, that’s why it’s better if it is a Spanish project)<br /> - Acceleration services (group and individual mentorships, and acceleration services like we do in our Open Future program) <br /> - Possibility of a pitch to the investments committee and the possibility of an investment up to 250k€', 
+        detail: ' 4 months of office space in one of our hubs in Madrid or Bacelona (Spain, that’s why it’s better if it is a Spanish project)<br /> - Acceleration services (group and individual mentorships, and acceleration services like we do in our Open Future program) <br /> - Possibility of a pitch to the investments committee and the possibility of an investment up to 250k€', 
         teams: ['Ciclogreen']},
     {
         name: "stekiradio", 
@@ -232,19 +232,36 @@ let partnerList = [
     }
 ]
 
-function project(teams) {
-    let pledgeWrapper = teams
+function sortByProject(teams) {
+    let projects = teams
         .map(team => `
             <div id="pledge_wrapper">
                 <h2>${team.project}</h2>
                 <ul>
-                    ${team.partners.map(partner => `<li>${partner.name}: ${partner.detail}</li>`)}
+                    ${team.partners.map(partner => `<li>${partner.name}: ${partner.detail}</li>`).join('')}
                 </ul>
             </div>
             `
         )
         .join('')
-    document.getElementById('pledges').innerHTML = pledgeWrapper;
+    
+    document.getElementById('pledges').innerHTML = projects;
+}
+
+
+
+function sortByPartner(partners) {
+    let pledge = partners
+        .map(partner => `
+            <div id="pledge_wrapper">
+                <h2>${partner.name}</h2>
+                <h4>- ${partner.detail}</h4>
+                <p>Projects: ${partner.teams}</p>
+            </div>
+            `)
+        .join('')
+    console.log(pledge)
+    document.getElementById('pledges').innerHTML = pledge;
 }
 
 function compareProject(a, b) {
@@ -259,11 +276,25 @@ function compareProject(a, b) {
     }
     return comparison;
   }
-  
-  function comparePartner(a, b) {
+
+function sortingProject() {
+    const sortedProjects = pledge.sort(compareProject);
+    sortByProject(sortedProjects);
+}
+
+var projectSortButton = document.querySelector('#project');
+projectSortButton.addEventListener('click', event => {
+    sortingProject();
+})
+
+
+
+// ------------sorting by partners
+
+function comparePartner(a, b) {
     // Use toUpperCase() to ignore character casing
-    const partnerA = a.partners[0].name.toUpperCase();
-    const partnerB = b.partners[0].name.toUpperCase();
+    const partnerA = a.name.toUpperCase();
+    const partnerB = b.name.toUpperCase();
     let comparison = 0;
     if (partnerA > partnerB) {
       comparison = 1;
@@ -273,27 +304,17 @@ function compareProject(a, b) {
     return comparison;
   }
 
-
-function sortByProject() {
-    const sortedProjects = pledge.sort(compareProject);
-    project(sortedProjects);
+function sortingPartner() {
+    const sortedPartners = partnerList.sort(comparePartner);
+    sortByPartner(sortedPartners);
 }
-
-function sortByPartner() {
-    const sortedPartners = pledge.sort(comparePartner);
-    project(sortedPartners);
-}
-
-
-var projectSortButton = document.querySelector('#project');
 var partnerSortButton = document.querySelector('#partner');
-
-projectSortButton.addEventListener('click', event => {
-    sortByProject();
-})
-
 partnerSortButton.addEventListener('click', event => {
-    sortByPartner();
+    sortingPartner();
 })
 
-project(pledge);
+sortByProject(pledge);
+sortByPartner(partnerList);
+
+
+document.getElementById('partner').addEventListener('click', sortByPartner(partnerList))
