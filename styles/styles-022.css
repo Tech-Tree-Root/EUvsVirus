@@ -208,7 +208,7 @@ button:focus {
 .primary-button.btn-rounded {
 	padding: 6px 6px;
 	border-radius: 30px;
-	width: 215px;
+	width: 180px;
 }
 @media (max-width: 576px) {
 	.primary-button-wrapper {
