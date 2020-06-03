@@ -236,9 +236,10 @@ function sortByProject(teams) {
     let projects = teams
         .map(team => `
             <div id="pledge_wrapper">
-                <h2>${team.project}</h2>
+                <h2 style="margin-bottom:10px">${team.project}</h2>
+                <h4>Partners</h4>
                 <ul>
-                    ${team.partners.map(partner => `<li>${partner.name}: ${partner.detail}</li>`).join('')}
+                    ${team.partners.map(partner => `<li><strong>${partner.name}</strong>: ${partner.detail}</li>`).join('')}
                 </ul>
             </div>
             `
@@ -248,21 +249,6 @@ function sortByProject(teams) {
     document.getElementById('pledges').innerHTML = projects;
 }
 
-
-
-function sortByPartner(partners) {
-    let pledge = partners
-        .map(partner => `
-            <div id="pledge_wrapper">
-                <h2>${partner.name}</h2>
-                <h4>- ${partner.detail}</h4>
-                <p>Projects: ${partner.teams}</p>
-            </div>
-            `)
-        .join('')
-    console.log(pledge)
-    document.getElementById('pledges').innerHTML = pledge;
-}
 
 function compareProject(a, b) {
     // Use toUpperCase() to ignore character casing
@@ -291,6 +277,20 @@ projectSortButton.addEventListener('click', event => {
 
 // ------------sorting by partners
 
+function sortByPartner(partners) {
+    let pledge = partners
+        .map(partner => `
+            <div id="pledge_wrapper">
+                <h2 style="margin-bottom:10px">${partner.name}</h2>
+                <p>detail<br />- ${partner.detail} <br /> <br />
+                <strong>Projects:</strong> ${partner.teams}</p>
+            </div>
+            `)
+        .join('')
+    console.log(pledge)
+    document.getElementById('pledges').innerHTML = pledge;
+}
+
 function comparePartner(a, b) {
     // Use toUpperCase() to ignore character casing
     const partnerA = a.name.toUpperCase();
@@ -313,8 +313,5 @@ partnerSortButton.addEventListener('click', event => {
     sortingPartner();
 })
 
-sortByProject(pledge);
 sortByPartner(partnerList);
-
-
-document.getElementById('partner').addEventListener('click', sortByPartner(partnerList))
+sortByProject(pledge);
