@@ -652,7 +652,7 @@ nav ul ul ul li {
 
 /*** BEGIN intro ***/
 #intro {
-	margin-top: 8rem;
+	margin-top: 4rem;
 }
 @media (max-width: 768px) {
 	#intro {
